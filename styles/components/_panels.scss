@@ -1,0 +1,23 @@
+@import './../abstract/variables';
+@import './../abstract/mixins';
+
+.panels {
+    display: flex;
+    flex-direction: column;
+    font-family: $main-font-family;
+    background-color: $main-color;
+    .panel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 75%;
+        margin: 0 auto;
+        background: #ffffff;
+        .panel-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
