@@ -1,3 +1,9 @@
+@import './../abstract/variables';
+@import './../abstract/mixins';
+
+html {
+    font-size: $main-font-size;
+}
 // basic reset
 html, body {
     margin: 0;
