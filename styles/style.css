@@ -51,6 +51,9 @@ html {
   line-height: 2.3rem;
 }
 
+.panel-navigation {
+  margin-top: 3rem;
+}
 .panel-navigation .nav-report .navigator {
   display: flex;
   justify-content: center;
@@ -58,8 +61,8 @@ html {
 }
 .panel-navigation .nav-report .navigator .nav-item a {
   color: white;
-  font-size: 1.7rem;
-  margin: 0 17px;
+  font-size: 3rem;
+  margin: 0 1.5rem;
   -webkit-text-stroke: 1px black;
   text-decoration: none;
 }

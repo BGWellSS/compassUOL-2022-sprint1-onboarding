@@ -2,6 +2,7 @@
 @import './../abstract/mixins';
 
 .panel-navigation {
+    margin-top: 3rem;
     .nav-report {
         .navigator {
             display: flex;
@@ -10,8 +11,8 @@
             .nav-item {
                 a {
                     color: white;
-                    font-size: 1.7rem;
-                    margin: 0 17px;
+                    font-size: 3rem;
+                    margin: 0 1.5rem;
                     -webkit-text-stroke: 1px black;
                     text-decoration: none;
                     &[active] {
