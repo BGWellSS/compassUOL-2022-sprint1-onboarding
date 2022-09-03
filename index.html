@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+    <script src="./js/scroller.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
 
     <title>Onboarding</title>
@@ -17,73 +18,75 @@
 
 <body>
     <main class="panels">
-        <section class="panel" id="panel1">
-            <div class="panel-container">
-                <div class="panel-content">
-                    <div class="image-container">
-                        <img src="./images/online-world-pana1.svg" alt="Community of gardening enthusiasts connected">
+        <div class="panels-container">
+            <div class="panel" id="panel1">
+                <div class="panel-container">
+                    <div class="panel-content">
+                        <div class="image-container">
+                            <img src="./images/online-world-pana1.svg" alt="Community of gardening enthusiasts connected">
+                        </div>
+                        <h2 class="panel-title">Plant lover Community</h2>
+                        <p class="panel-description">Find gardening enthusiasts from all over the world</p>
                     </div>
-                    <h1 class="panel-title">Plant lover Community</h1>
-                    <p class="panel-description">Find gardening enthusiasts from all over the world</p>
-                </div>
-                <div class="panel-navigation">
-                    <div class="nav-report">
-                        <button class="nav-dot active"></button>
-                        <button class="nav-dot"></button>
-                        <button class="nav-dot"></button>
-                    </div>
-                    <div class="nav-continue"><a href="#panel2"><span>Continue</span></a></div>
-                    <div class="nav-container">
-                        <div class="nav-skip"><a href="#panel3">Skip</a></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="panel" id="panel2">
-            <div class="panel-container">
-                <div class="panel-content">
-                    <div class="image-container">
-                        <img src="./images/In-no-time-pana1.svg" alt="Customer quickly receiving their purchases">
-                    </div>
-                    <h1 class="panel-title">Plant lover Community</h1>
-                    <p class="panel-description">Find gardening enthusiasts from all over the world</p>
-                </div>
-                <div class="panel-navigation">
-                    <div class="nav-report">
-                        <button class="nav-dot"></button>
-                        <button class="nav-dot active"></button>
-                        <button class="nav-dot"></button>
-                    </div>
-                    <div class="nav-continue"><a href="#panel3">Continue</a></div>
-                    <div class="nav-container">
-                        <div class="nav-back"><a href="#panel1">Back</a></div>
-                        <div class="nav-skip"><a href="#panel3">Skip</a></div>
+                    <div class="panel-navigation">
+                        <div class="nav-report">
+                            <div class="nav-dot active"></div>
+                            <div class="nav-dot"></div>
+                            <div class="nav-dot"></div>
+                        </div>
+                        <div class="nav-continue"><a href="#panel2" onclick="scrollfRight(2)"><span>Continue</span></a></div>
+                        <div class="nav-container">
+                            <div class="nav-skip"><a href="#panel3" onclick="scrollfRight(3)">Skip</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="panel" id="panel3">
-            <div class="panel-container">
-                <div class="panel-content">
-                    <div class="image-container">
-                        <img src="./images/ecommerce-campaign-cuate1.svg" alt="In-app sales of quality products">
+            <div class="panel" id="panel2">
+                <div class="panel-container">
+                    <div class="panel-content">
+                        <div class="image-container">
+                            <img src="./images/In-no-time-pana1.svg" alt="Customer quickly receiving their purchases">
+                        </div>
+                        <h2 class="panel-title">Plant lover Community</h2>
+                        <p class="panel-description">Find gardening enthusiasts from all over the world</p>
                     </div>
-                    <h1 class="panel-title">Buy & Sell Tools</h1>
-                    <p class="panel-description">Buy & sell good quality products for your beautiful plants</p>
-                </div>
-                <div class="panel-navigation">
-                    <div class="nav-report">
-                        <button class="nav-dot"></button>
-                        <button class="nav-dot"></button>
-                        <button class="nav-dot active"></button>
-                    </div>
-                    <div class="nav-continue"><a href="#">Get started</a></div>
-                    <div class="nav-container">
-                        <div class="nav-back"><a href="#panel2">Back</a></div>
+                    <div class="panel-navigation">
+                        <div class="nav-report">
+                            <div class="nav-dot"></div>
+                            <div class="nav-dot active"></div>
+                            <div class="nav-dot"></div>
+                        </div>
+                        <div class="nav-continue"><a href="#panel3" onclick="scrollfRight(3)">Continue</a></div>
+                        <div class="nav-container">
+                            <div class="nav-back"><a href="#panel1" onclick="scrollfleft(1)">Back</a></div>
+                            <div class="nav-skip"><a href="#panel3" onclick="scrollfRight(3)">Skip</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="panel" id="panel3">
+                <div class="panel-container">
+                    <div class="panel-content">
+                        <div class="image-container">
+                            <img src="./images/ecommerce-campaign-cuate1.svg" alt="In-app sales of quality products">
+                        </div>
+                        <h2 class="panel-title">Buy & Sell Tools</h2>
+                        <p class="panel-description">Buy & sell good quality products for your beautiful plants</p>
+                    </div>
+                    <div class="panel-navigation">
+                        <div class="nav-report">
+                            <div class="nav-dot"></div>
+                            <div class="nav-dot"></div>
+                            <div class="nav-dot active"></div>
+                        </div>
+                        <div class="nav-continue"><a href="#">Get started</a></div>
+                        <div class="nav-container">
+                            <div class="nav-back"><a href="#panel2" onclick="scrollfleft(2)">Back</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
