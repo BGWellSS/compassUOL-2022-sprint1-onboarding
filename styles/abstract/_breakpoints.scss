@@ -1,14 +1,28 @@
-// Extra large devices (large desktops)
+@import './../abstract/variables';
+@import './../abstract/mixins';
+
+// Large devices (Large desktops)
 @media (max-width: 1200px) {}
 
 // Large devices (desktops)
 @media (max-width: 992px) {}
 
-// Medium devices (tablets)
-@media (max-width: 768px) {}
+// Medium devices (mobile devices)
+@media (max-width: 768px) {
+}
 
-// Small devices (landscape)
-@media (max-width: 576px) {}
-
-// Small devices (portrait)
-@media (max-width: 321px) {}
+// Small devices (small mobile devices)
+@media (max-width: 320px) {
+    .panel-content {
+        .panel-title {
+            $temp-font: calc($title-font-size * 0.85);
+            font-size: $temp-font;
+            line-height: calc($temp-font * 1.3);
+        }
+        .panel-description {
+            $temp-font: calc($descr-font-size * 0.85);
+            font-size: $temp-font;
+            line-height: calc($temp-font * 1.3);
+        }
+    }
+}

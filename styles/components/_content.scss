@@ -5,18 +5,19 @@
     text-align: center;
     .image-container {
         img {
-            width: 35rem;
-            height: 35rem;
+            width: 100%;
+            height: 100%;
         }
     }
     .panel-title {
         font-size: $title-font-size;
         font-weight: 600;
-        line-height: 3.1rem;
+        line-height: calc($title-font-size * 1.3);
     }
     .panel-description {
         font-size: $descr-font-size;
         font-weight: 400;
-        line-height: 2.3rem;
+        line-height: calc($descr-font-size * 1.3);
+        margin-top: 2.5rem;
     }
 }

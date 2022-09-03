@@ -23,7 +23,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 75%;
+  max-width: 45rem;
   margin: 0 auto;
   background: #ffffff;
 }
@@ -31,24 +31,26 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 3.5rem;
 }
 
 .panel-content {
   text-align: center;
 }
 .panel-content .image-container img {
-  width: 35rem;
-  height: 35rem;
+  width: 100%;
+  height: 100%;
 }
 .panel-content .panel-title {
   font-size: 2.4rem;
   font-weight: 600;
-  line-height: 3.1rem;
+  line-height: 3.12rem;
 }
 .panel-content .panel-description {
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 2.3rem;
+  line-height: 2.34rem;
+  margin-top: 2.5rem;
 }
 
 .panel-navigation {
@@ -59,9 +61,9 @@ html {
   justify-content: center;
 }
 .panel-navigation .nav-report .nav-dot {
-  height: 1.7rem;
-  width: 1.7rem;
-  margin: 0 2rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin: 0 1.7rem;
   background: #ffffff;
   border: 1px solid #000000;
   border-radius: 100px;
@@ -103,4 +105,15 @@ html {
   text-decoration: none;
   font-size: 1.8rem;
   line-height: 2.32rem;
+}
+
+@media (max-width: 320px) {
+  .panel-content .panel-title {
+    font-size: 2.04rem;
+    line-height: 2.652rem;
+  }
+  .panel-content .panel-description {
+    font-size: 1.53rem;
+    line-height: 1.989rem;
+  }
 }/*# sourceMappingURL=style.css.map */
