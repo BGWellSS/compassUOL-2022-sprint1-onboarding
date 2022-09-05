@@ -34,7 +34,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3.5rem;
+  padding: 0 3.5rem;
 }
 .panels .panels-container .panel.scroll-left .panel-container {
   -webkit-animation: moveFromRight 1s ease both;
@@ -70,7 +70,8 @@ html {
 }
 .panel-content .image-container img {
   width: 100%;
-  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
 }
 .panel-content .panel-title {
   font-size: 2.4rem;
@@ -84,12 +85,10 @@ html {
   margin-top: 2.5rem;
 }
 
-.panel-navigation {
-  margin-top: 3rem;
-}
 .panel-navigation .nav-report {
   display: flex;
   justify-content: center;
+  margin: 64px 0;
 }
 .panel-navigation .nav-report .nav-dot {
   box-sizing: initial;
@@ -105,7 +104,6 @@ html {
   border-color: #92E3A9;
 }
 .panel-navigation .nav-continue {
-  margin: 3rem 0;
   box-shadow: 0px 4px 10px #A1C3FC;
 }
 .panel-navigation .nav-continue a {
@@ -124,6 +122,7 @@ html {
 .panel-navigation .nav-container {
   display: flex;
   justify-content: center;
+  margin-top: 42px;
 }
 .panel-navigation .nav-container .nav-back ~ .nav-skip {
   margin-left: 10rem;
@@ -139,7 +138,26 @@ html {
   line-height: 2.32rem;
 }
 
+@media (max-width: 512px) {
+  .panels .panels-container .panel .panel-container {
+    padding: 0 30px;
+  }
+  .panel-content .panel-title {
+    font-size: 2.16rem;
+    line-height: 2.808rem;
+  }
+  .panel-content .panel-description {
+    font-size: 1.62rem;
+    line-height: 2.106rem;
+  }
+  .panel-navigation .nav-report {
+    margin: 45px 0;
+  }
+}
 @media (max-width: 320px) {
+  .panels .panels-container .panel .panel-container {
+    padding: 0 25px;
+  }
   .panel-content .panel-title {
     font-size: 2.04rem;
     line-height: 2.652rem;
@@ -147,5 +165,8 @@ html {
   .panel-content .panel-description {
     font-size: 1.53rem;
     line-height: 1.989rem;
+  }
+  .panel-navigation .nav-report {
+    margin: 35px 0;
   }
 }/*# sourceMappingURL=style.css.map */

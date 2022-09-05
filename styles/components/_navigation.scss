@@ -2,10 +2,10 @@
 @import './../abstract/mixins';
 
 .panel-navigation {
-    margin-top: 3rem;
     .nav-report {
         display: flex;
         justify-content: center;
+        margin: 64px 0;
         .nav-dot {
             box-sizing: initial;
             height: 1.2rem;
@@ -21,7 +21,6 @@
         }
     }
     .nav-continue {
-        margin: 3.0rem 0;
         box-shadow: 0px 4px 10px $main-box-shadow;
         a {
             display: flex;
@@ -41,6 +40,7 @@
     .nav-container {
         display: flex;
         justify-content: center;
+        margin-top: 42px;
         .nav-back ~ .nav-skip {
             margin-left: 10rem;
         }

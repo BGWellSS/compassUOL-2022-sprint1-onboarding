@@ -8,11 +8,46 @@
 @media (max-width: 992px) {}
 
 // Medium devices (mobile devices)
-@media (max-width: 768px) {
+@media (max-width: 512px) {
+    .panels {
+        .panels-container {
+            .panel {
+                .panel-container {
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+    .panel-content {
+        .panel-title {
+            $temp-font: calc($title-font-size * 0.9);
+            font-size: $temp-font;
+            line-height: calc($temp-font * 1.3);
+        }
+        .panel-description {
+            $temp-font: calc($descr-font-size * 0.9);
+            font-size: $temp-font;
+            line-height: calc($temp-font * 1.3);
+        }
+    }
+    .panel-navigation {
+        .nav-report {
+            margin: 45px 0;
+        }
+    }
 }
 
 // Small devices (small mobile devices)
 @media (max-width: 320px) {
+    .panels {
+        .panels-container {
+            .panel {
+                .panel-container {
+                    padding: 0 25px;
+                }
+            }
+        }
+    }
     .panel-content {
         .panel-title {
             $temp-font: calc($title-font-size * 0.85);
@@ -23,6 +58,11 @@
             $temp-font: calc($descr-font-size * 0.85);
             font-size: $temp-font;
             line-height: calc($temp-font * 1.3);
+        }
+    }
+    .panel-navigation {
+        .nav-report {
+            margin: 35px 0;
         }
     }
 }
