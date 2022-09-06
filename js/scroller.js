@@ -1,52 +1,20 @@
-function scrollfRight(panel) {
-    var element = document.getElementById("panel"+panel);
-    switch (panel) {
-        case 1:
-            element.classList.add("scroll-left");
-            element = document.getElementById("panel2");
-            element.classList.remove("scroll-left","scroll-right");
-            element = document.getElementById("panel3");
-            element.classList.remove("scroll-left","scroll-right");
-            break;
-        case 2:
-            element.classList.add("scroll-left");
-            element = document.getElementById("panel1");
-            element.classList.remove("scroll-left","scroll-right");
-            element = document.getElementById("panel3");
-            element.classList.remove("scroll-left","scroll-right");
-            break;
-        case 3:
-            element.classList.add("scroll-left");
-            element = document.getElementById("panel1");
-            element.classList.remove("scroll-left","scroll-right");
-            element = document.getElementById("panel2");
-            element.classList.remove("scroll-left","scroll-right");
-            break;
+function clearclass (index, max) {
+  for (i = 1; i <= max; i++) {
+    if (i !== index) {
+      el = document.getElementById("panel" + i);
+      if (el.classList.contains("scroll-left")) { el.classList.remove("scroll-left"); }
+      if (el.classList.contains("scroll-right")) { el.classList.remove("scroll-right"); }
     }
- }
- function scrollfleft(panel) {
-    var element = document.getElementById("panel"+panel);
-    switch (panel) {
-        case 1:
-            element.classList.add("scroll-right");
-            element = document.getElementById("panel2");
-            element.classList.remove("scroll-right","scroll-left");
-            element = document.getElementById("panel3");
-            element.classList.remove("scroll-right","scroll-left");
-            break;
-        case 2:
-            element.classList.add("scroll-right");
-            element = document.getElementById("panel1");
-            element.classList.remove("scroll-right","scroll-left");
-            element = document.getElementById("panel3");
-            element.classList.remove("scroll-right","scroll-left");
-            break;
-        case 3:
-            element.classList.add("scroll-right");
-            element = document.getElementById("panel1");
-            element.classList.remove("scroll-right","scroll-left");
-            element = document.getElementById("panel2");
-            element.classList.remove("scroll-right","scroll-left");
-            break;
-    }
- }
+  }
+}
+
+function scrollfRight(panel, max) {
+  var el = document.getElementById("panel" + panel);
+  el.classList.add("scroll-left");
+  clearclass (panel, max);
+}
+function scrollfLeft(panel, max) {
+  var el = document.getElementById("panel" + panel);
+  el.classList.add("scroll-right");
+  clearclass (panel, max);
+}
