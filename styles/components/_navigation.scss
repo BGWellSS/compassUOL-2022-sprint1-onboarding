@@ -5,12 +5,14 @@
     .nav-report {
         display: flex;
         justify-content: center;
-        margin: 64px 0;
+        margin: 45px 0;
+        list-style: none;
         .nav-dot {
+            display: block;
             box-sizing: initial;
-            height: 1.2rem;
-            width: 1.2rem;
-            margin: 0 1.7rem;
+            height: 12px;
+            width: 12px;
+            margin: 0 17px;
             background: #ffffff;
             border: 1px solid #000000;
             border-radius: 100px;
